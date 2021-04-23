@@ -1,11 +1,14 @@
 //Author Carter Culkin
 import React from "react" 
-import { Route } from "react-router-dom";
+import { Route,Redirect } from "react-router-dom";
 import { Login } from "./components/auth/Login";
 import { Register } from "./components/auth/Register";
-export const ApplicationViews = ({ setAuthUser}) => {
-//isAuthenticated,
+import {PostList} from "./components/post/PostList";
+import {PostDetail} from "./components/post/PostDetail";
+import {PostForm} from "./components/post/PostForm";
+import {PostEditForm} from "./components/post/PostEdit";
 
+export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
     return (
         <>
@@ -14,6 +17,18 @@ export const ApplicationViews = ({ setAuthUser}) => {
             </Route>
             <Route path="/register">
 	          <Register setAuthUser={setAuthUser}/>
+            </Route>
+            <Route exact path="/posts">
+	          {isAuthenticated ? <PostList /> : <Redirect to="/login" />}
+            </Route>
+            <Route exact path="/posts/:postId(\d+)">
+              <PostDetail/>
+            </Route>
+            <Route exact path ="/posts/create">
+              <PostForm/>
+            </Route>
+            <Route exact path="/posts/:postId(\d+)/edit">
+              <PostEditForm />
             </Route>
         </>
     )
