@@ -1,10 +1,10 @@
 //Author Carter Culkin
-import React, { useState } from "react" 
-import { Route, Redirect } from "react-router-dom";
+import React from "react" 
+import { Route } from "react-router-dom";
 import { Login } from "./components/auth/Login";
 import { Register } from "./components/auth/Register";
-export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
-
+export const ApplicationViews = ({ setAuthUser}) => {
+//isAuthenticated,
 
 
     return (

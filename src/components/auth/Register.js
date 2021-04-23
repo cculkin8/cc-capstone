@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
 import { useHistory } from "react-router-dom"
+import "./Login.css"
 
 export const Register = ({setAuthUser}) => {
     const firstName = useRef()
@@ -69,10 +70,9 @@ export const Register = ({setAuthUser}) => {
                     <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Register </button>
+                    <button type="submit"> Sign in </button>
                 </fieldset>
             </form>
         </main>
     )
 }
-
