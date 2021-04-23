@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    background-color: darkslategray;
+    margin-top:0px;
+    padding: 1em;
+}
+
+.navbar__item {
+    flex-basis: 20%;
+    list-style-type: none;
+}
+.navbar__link:hover{
+    color: lightslategray;
+}
+.navbar__link{
+    color: white;
+}
