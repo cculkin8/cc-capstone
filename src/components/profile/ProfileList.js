@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProfileCard } from './ProfileCard';
-import { getAllProfiles, remove, getProfileById } from '../../modules/ProfileManager';
+import { getAllProfiles, remove } from '../../modules/ProfileManager';
 import { useHistory } from "react-router-dom";
 
 
