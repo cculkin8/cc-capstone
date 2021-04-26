@@ -21,7 +21,7 @@ export const addPost = (newPost) =>{
     },
     body: JSON.stringify(newPost)
   }).then(response => response.json())
-};
+};//This is allowing the user to post directly into the database by stringifying their submitted information and making the content json applicable
 
 export const updatePost = (editedPost) => {
   return fetch(`${remoteURL}/posts/${editedPost.id}`, {
@@ -31,4 +31,4 @@ export const updatePost = (editedPost) => {
     },
     body: JSON.stringify(editedPost)
   }).then(data => data.json());
-}
+}//similar to adding posts, this is just changing the selected value of any given post
