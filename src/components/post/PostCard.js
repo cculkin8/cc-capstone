@@ -1,6 +1,8 @@
 import React from "react";
 import {useHistory} from 'react-router-dom'
 import "./Post.css"
+
+    
 export const PostCard = ({ post, deletepost }) => {
 const history = useHistory();
     return (

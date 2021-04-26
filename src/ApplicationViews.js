@@ -7,6 +7,11 @@ import {PostList} from "./components/post/PostList";
 import {PostDetail} from "./components/post/PostDetail";
 import {PostForm} from "./components/post/PostForm";
 import {PostEditForm} from "./components/post/PostEdit";
+import {ProfileList} from "./components/profile/ProfileList";
+import {ProfileForm} from "./components/profile/ProfileForm";
+import {ProfileEdit} from "./components/profile/ProfileEdit";
+import {ProfileDetail} from "./components/profile/ProfileDetails";
+
 
 export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
@@ -29,6 +34,18 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             </Route>
             <Route exact path="/posts/:postId(\d+)/edit">
               <PostEditForm />
+            </Route>
+            <Route exact path="/profiles">
+	          {isAuthenticated ? <ProfileList /> : <Redirect to="/login" />}
+            </Route>
+            <Route exact path="/profiles/:profileId(\d+)">
+              <ProfileDetail/>
+            </Route>
+            <Route exact path ="/profiles/create">
+              <ProfileForm/>
+            </Route>
+            <Route exact path="/profiles/:profileId(\d+)/edit">
+              <ProfileEdit />
             </Route>
         </>
     )
