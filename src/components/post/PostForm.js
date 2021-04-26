@@ -7,7 +7,7 @@ export const PostForm = () => {
 const [isLoading, setIsLoading] = useState(false);
 const history = useHistory();
 
-const handleControlledInputChange = (event) => {
+const handleControlledInputChange = (event) => {//this is making sure that input changes will actually have an effect instead of constantly clearing the input bar
     const newPost = { ...post }
     let selectedVal = event.target.value
     if (event.target.id.includes("Id")){
@@ -19,7 +19,7 @@ const handleControlledInputChange = (event) => {
 const constructNewPost = evt => {
     evt.preventDefault();
     if (post.name === "" || post.zipcode === "" || post.mapurl === "" || post.description === "") {
-        window.alert("Fill all fields to proceed");
+        window.alert("Fill all fields to proceed");//This is requiring the user to fill out these specific fields to proceed
     } else {
         setIsLoading(true);
        addPost(post)
@@ -31,7 +31,7 @@ return (
         <form>
             <fieldset>
                 <div className="formgrid">
-                <label htmlFor="name">Event name</label>
+                <label htmlFor="name">Post name</label>
                     <input
                         type="text"
                         required
@@ -66,7 +66,7 @@ return (
                         onChange={handleControlledInputChange}
                         id="description"
                         value={post.description}
-                    /><label htmlFor="user">User</label>
+                    />
                 </div>
 
                 <div className="postPostBtn">

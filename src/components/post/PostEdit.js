@@ -45,7 +45,8 @@ export const PostEditForm = () => {
     <>
         <form>
             <fieldset>
-                <div className="formgrid">
+            <div className="formgrid">
+                <label htmlFor="name">Post name</label>
                     <input
                         type="text"
                         required
@@ -54,37 +55,25 @@ export const PostEditForm = () => {
                         id="name"
                         value={post.name}
                     />
-                    <label htmlFor="name">Post name</label>
-
-                    <input
-                        type="date"
-                        required
-                        className="form-control"
-                        onChange={handleFieldChange}
-                        id="date"
-                        value={post.date}
-                    />
-                    <label htmlFor="date">Date</label>
-                    
-                    <input
-                        type="zipcode"
-                        required
-                        className="form-control"
-                        onChange={handleFieldChange}
-                        id="zipcode"
-                        />
-                    <lable htmlFor="zipcode">Zipcode</lable>
-
+                    <label htmlFor="zip">Zipcode</label>
                     <input
                         type="text"
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="postMapURL"
-                        value={post.mapurl}
+                        id="zipcode"
+                        value={post.zipcode}
                     />
                     <label htmlFor="mapurl">Map URL</label>
-
+                    <input
+                        type="text"
+                        required
+                        className="form-control"
+                        onChange={handleFieldChange}
+                        id="mapurl"
+                        value={post.mapurl}
+                    />
+                    <label htmlFor="description">Description</label>
                     <input
                         type="text"
                         required
@@ -92,8 +81,7 @@ export const PostEditForm = () => {
                         onChange={handleFieldChange}
                         id="description"
                         value={post.description}
-                        />
-                    <label htmlFor="description">Description</label>
+                    />
                 </div>
 
                 <div className="postEditBtn">
