@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getProfileById } from "../../modules/ProfileManager";
 import { useParams, useHistory } from "react-router-dom"
-import { firstLetterCase } from "../../modules/helpers"
 
 export const ProfileDetail = () =>{
     const [profile, setProfile] = useState({userName: "", motorcycles: "", description: "", uri: ""});
@@ -20,10 +19,10 @@ export const ProfileDetail = () =>{
     }, [profileId]);
     return (
         <section className="profileDetail">
-                    <h1 className="profileUserName">{firstLetterCase(profile.name)}</h1>
-                    <h2 className="profileBikes">{firstLetterCase(profile.userName)}'s rides {profile.motorcycles}</h2>
-                    <p className="profileDescription"> {firstLetterCase(profile.description)}</p>
-                    <input className="profileSpotifyURI">{firstLetterCase(profile.userName)}'s Spotify playlist: {profile.uri}</input>
+                    <h1 className="profileUserName">{profile.name}</h1>
+                    <h2 className="profileBikes">{profile.userName}'s rides {profile.motorcycles}</h2>
+                    <p className="profileDescription"> {profile.description}</p>
+                    <input className="profileSpotifyURI">{profile.userName}'s Spotify playlist: {profile.uri}</input>
                     <button className="profileButton" type="button" onClick={() => history.push(`profiles/${profile.id}/edit`)}>Edit</button>
         </section>
     )
