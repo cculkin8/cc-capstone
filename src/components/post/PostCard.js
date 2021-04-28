@@ -13,7 +13,6 @@ const history = useHistory();
                     <p className="postDate">Date: {post.date} Zipcode: {post.zipcode}</p>
                     <p className="postMapURL"> Map: {post.mapurl}</p>
                     <p className="postDescription"> Description: {post.description}</p>
-                    <p className="postUserId">User: {post.userId}</p>
                     <button className="postButton" type="button" onClick={() => history.push(`posts/${post.id}/edit`)}>Edit</button>
                     <button className="postButton" type="button" onClick={() => deletepost(post.id)}>Delete</button>
                 </h3>

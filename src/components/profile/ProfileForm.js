@@ -37,7 +37,7 @@ return (
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="name"
+                        id="userName"
                         value={profile.userName}
                     />
                     <label htmlFor="userBikes">Motorcycles</label>
@@ -46,7 +46,7 @@ return (
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="zipcode"
+                        id="motorcycles"
                         value={profile.motorcycles}
                     />
                     <label htmlFor="description">About you</label>
@@ -64,7 +64,7 @@ return (
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="mapurl"
+                        id="uri"
                         value={profile.uri}
                     />
                 </div>
