@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { useHistory } from "react-router-dom";
 import { addProfile } from "../../modules/ProfileManager";
-
 export const ProfileForm = () => {
     const [profile, setProfile] = useState({userName: "", motorcycles: "", description: "", uri: "",  userId:parseInt(sessionStorage.getItem("Bliss_user"))});
     const [isLoading, setIsLoading] = useState(false);
