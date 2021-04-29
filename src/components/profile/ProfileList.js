@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ProfileCard } from './ProfileCard';
+import { ProfileCard } from './xProfileCard';
 import { getAllProfiles, remove } from '../../modules/ProfileManager';
 import { useHistory } from "react-router-dom";
 
