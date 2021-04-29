@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PostCard } from './PostCard';
 import { getAllPosts, remove, getPostById } from '../../modules/PostManager';
 import { useHistory } from "react-router-dom";
-
+import "./Post.css"
 
 export const PostList = () => {
   const [posts, setPosts] = useState([]);

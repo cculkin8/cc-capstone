@@ -1,0 +1,14 @@
+.profileCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40%;
+}
+.profile-container-cards{
+width: 75%;
+}
+.profileSpotifyURI{
+    position: fixed;
+    right: 0%;
+    top: 4.8%;
+}
