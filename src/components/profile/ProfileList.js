@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ProfileCard } from './ProfileCard';
 import { getAllProfiles, remove } from '../../modules/ProfileManager';
 import { useHistory } from "react-router-dom";
-
+import "./Profile.css"
 
 export const ProfileList = () => {
   const [profiles, setProfiles] = useState([]);
@@ -29,7 +29,7 @@ export const ProfileList = () => {
       onClick={() => {history.push("/profiles/create")}}>
       Create your profile!
       </button>
-      <div className="container-cards">
+      <div className="profile-container-cards">
         {profiles.map(profile => 
           <ProfileCard
             key={profile.id} profile={profile}

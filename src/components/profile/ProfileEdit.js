@@ -23,7 +23,10 @@ export const ProfileEdit = () => {
   
     const editedProfile = {
       id: profileId,
-      userId: profile.userId
+      userName: profile.userName,
+      motorcycles: profile.motorcycles,
+      description: profile.description,
+      uri: profile.uri
     };
 
   updateProfile(editedProfile)
@@ -49,7 +52,7 @@ export const ProfileEdit = () => {
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="name"
+                        id="userName"
                         value={profile.userName}
                     />
                     <label htmlFor="userBikes">Motorcycles</label>
@@ -58,7 +61,7 @@ export const ProfileEdit = () => {
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="zipcode"
+                        id="motorcycles"
                         value={profile.motorcycles}
                     />
                     <label htmlFor="description">About you</label>
@@ -76,10 +79,11 @@ export const ProfileEdit = () => {
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="mapurl"
+                        id="uri"
                         value={profile.uri}
                     />
                 </div>
+
 
                 <div className="profileEditBtn">
                     <button

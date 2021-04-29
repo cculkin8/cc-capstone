@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { useHistory } from "react-router-dom";
 import { addProfile } from "../../modules/ProfileManager";
-
 export const ProfileForm = () => {
     const [profile, setProfile] = useState({userName: "", motorcycles: "", description: "", uri: "",  userId:parseInt(sessionStorage.getItem("Bliss_user"))});
     const [isLoading, setIsLoading] = useState(false);
@@ -37,7 +36,7 @@ return (
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="name"
+                        id="userName"
                         value={profile.userName}
                     />
                     <label htmlFor="userBikes">Motorcycles</label>
@@ -46,7 +45,7 @@ return (
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="zipcode"
+                        id="motorcycles"
                         value={profile.motorcycles}
                     />
                     <label htmlFor="description">About you</label>
@@ -64,7 +63,7 @@ return (
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="mapurl"
+                        id="uri"
                         value={profile.uri}
                     />
                 </div>

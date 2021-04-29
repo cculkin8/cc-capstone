@@ -3,7 +3,7 @@ import { updatePost,getPostById } from "../../modules/PostManager";
 import { useHistory, useParams } from "react-router-dom";
 
 export const PostEditForm = () => {
-    const [post, setPost] = useState({name: "", zipcode: "",mapurl: "", description: ""});
+    const [post, setPost] = useState({name: "", zipcode: "", mapurl: "", description: ""});
    
     const [isLoading, setIsLoading] = useState(true)
    
@@ -24,9 +24,9 @@ export const PostEditForm = () => {
     const editedPost = {
       id: postId,
       name: post.name,
-      zipcode: post. zipcode,
-      mapurlId: post.mapurlId,
-      userId: post.userId
+      zipcode: post.zipcode,
+      mapurl: post.mapurl,
+      description: post.description
     };
 
   updatePost(editedPost)
