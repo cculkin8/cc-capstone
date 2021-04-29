@@ -1,6 +1,6 @@
 import React from "react";
 import {useHistory} from 'react-router-dom'
-    
+
 export const ProfileCard = ({ profile }) => {
 const history = useHistory();
     return (
