@@ -1,5 +1,6 @@
 //Author Carter Culkin
 import React from "react" 
+import { Home } from "./Home";
 import { Route,Redirect } from "react-router-dom";
 import { Login } from "./components/auth/Login";
 import { Register } from "./components/auth/Register";
@@ -17,6 +18,9 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
     return (
         <>
+            <Route exact path="/">
+                <Home/>
+            </Route>
             <Route path="/login">
 	          <Login setAuthUser={setAuthUser}/>
             </Route>

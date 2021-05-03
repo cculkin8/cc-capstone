@@ -1,0 +1,6 @@
+.pageImage {
+    display: flex;
+    width: 125em;
+    height: 25em;
+    position:relative;
+  }

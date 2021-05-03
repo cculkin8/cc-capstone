@@ -32,3 +32,13 @@ export const updatePost = (editedPost) => {
     body: JSON.stringify(editedPost)
   }).then(data => data.json());
 }//similar to adding posts, this is just changing the selected value of any given post
+
+export const getRandomId= () =>{
+  return fetch(`${remoteURL}/posts`)
+  .then(result => result.json())
+  .then(post => {
+    const randomIndex = Math.floor(Math.random() * post.length);
+    const randomPost = post[randomIndex];
+    return randomPost.id;
+  })
+}

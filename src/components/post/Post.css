@@ -3,5 +3,14 @@
     justify-content: center;
     flex-direction: column;
     max-width: 33%;
-    margin-left: 10%;
+    margin-left: 33%;
+}
+.post-card-content{
+    background-color: ivory;
+    border-radius: 5%;
+}
+.post-card-content button{
+    background-color: lavender;
+    border-radius: 4%;
+    margin: 10%;
 }
