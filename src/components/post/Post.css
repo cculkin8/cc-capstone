@@ -1,4 +1,4 @@
-.container-cards{
+.post-container-cards{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,5 +12,5 @@
 .post-card-content button{
     background-color: lavender;
     border-radius: 4%;
-    margin: 10%;
+    margin-left: 18%;
 }

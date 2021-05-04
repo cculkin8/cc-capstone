@@ -1,6 +1,7 @@
 import React from "react"
 
-export const Props = ({ motorcycle, yourName }) => {
+export const PropsCompile = ({ motorcycle, yourName }) => {
+  
   return (
     <><div className="Props">
       <h2>Welcome, {yourName} </h2>
