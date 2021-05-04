@@ -8,3 +8,20 @@
 .post-spotlight{
   margin-left: 5%;
 }
+h1{
+  margin-left: 5%;
+}
+.refreshButton{
+  margin-left: 5%;
+}
+.postDescription{
+  width: 25%;
+}
+.top3{
+  float: right;
+  top: 0%;
+  display: flex;
+}
+.solid{
+  margin-right: 15%;
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getPostById } from "../../modules/PostManager";
-import { ReactTinyLink } from 'react-tiny-link'
+
 export const PostSpotlight = ({postId}) => {
   const [post, setPost] = useState({});
 
@@ -15,7 +15,7 @@ export const PostSpotlight = ({postId}) => {
       <div>
       <span className="postCardName">{post.name}</span>
                     <p className="postDate">Date: {post.date} Zipcode: {post.zipcode}</p>
-
+                    <p className="postLink"><a href={post.mapurl}> Click me to find out where you're headed</a></p>
                     <p className="postDescription"> Description: {post.description}</p>
       </div>
     </div>
