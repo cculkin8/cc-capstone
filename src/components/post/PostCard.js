@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useHistory} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import "./Post.css"
 import Microlink from '@microlink/react'
 export const PostCard = ({ post, deletePost }) => {
@@ -24,6 +24,7 @@ const handleLike = () => {
                         </Microlink>: null}
                         </p>
                     <p className="postDescription"> Description: {post.description}</p>
+                    <Link className="posterProfile" to={`/profiles/${post.userId}`}>Posted by: {post.user.name}</Link>
                     <button className="postButton" type="button" onClick={() => history.push(`posts/${post.id}/edit`)}>Edit</button>
                     <button className="postButton" type="button" onClick={() => deletePost(post.id)}>Delete</button>
                     <button className="postButton" type="button" onClick={(handleLike)}>Like</button>

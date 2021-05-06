@@ -12,7 +12,7 @@ import {ProfileList} from "./components/profile/ProfileList";
 import {ProfileForm} from "./components/profile/ProfileForm";
 import {ProfileEdit} from "./components/profile/ProfileEdit";
 import {ProfileDetail} from "./components/profile/ProfileDetails";
-
+import {About} from "./AboutUs";
 
 export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
@@ -50,6 +50,9 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             </Route>
             <Route exact path="/profiles/:profileId(\d+)/edit">
               <ProfileEdit />
+            </Route>
+            <Route exact path="/about">
+              <About />
             </Route>
         </>
     )

@@ -1,7 +1,6 @@
 import React, { useState,useEffect } from "react";
 import { PostSpotlight } from "./components/post/PostSpotlight";
 import { getRandomId } from "./modules/PostManager";
-import { PropsCompile } from "./Props";
 import "./Home.css";
 import {TopPostCard} from "./components/post/TopPostCards"
 import motorcycleheader from"./images/motorcycleheader.jpg"
