@@ -26,7 +26,8 @@ export const PostEditForm = () => {
       name: post.name,
       zipcode: post.zipcode,
       mapurl: post.mapurl,
-      description: post.description
+      description: post.description,
+      userId: post.userId
     };
 
   updatePost(editedPost)

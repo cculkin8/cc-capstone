@@ -14,13 +14,14 @@ h1{
 .refreshButton{
   margin-left: 5%;
 }
-.postDescription{
+.toppostDescription{
   width: 25%;
 }
 .top3{
   float: right;
   top: 0%;
   display: flex;
+  margin-left: 40%;
 }
 .solid{
   margin-right: 15%;

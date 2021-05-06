@@ -23,9 +23,9 @@ const handleLike = () => {
                      showGraphic={true}
                      maxLine={2}
                      minLine={1}
-                     url={post.mapurl}
-/>
+                     url={post.mapurl}/>
                     <p className="postDescription"> Description: {post.description}</p>
+                    <p className="postCredit">Posted by: {post.userId} </p>
                     <button className="postButton" type="button" onClick={() => history.push(`posts/${post.id}/edit`)}>Edit</button>
                     <button className="postButton" type="button" onClick={() => deletePost(post.id)}>Delete</button>
                     <button className="postButton" type="button" onClick={(handleLike)}>Like</button>

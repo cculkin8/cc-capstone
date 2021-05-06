@@ -10,7 +10,6 @@ export const ProfileDetail = () =>{
     const history = useHistory();
 
     useEffect(() =>{
-        console.log("useEffect", profileId) 
         getProfileById(profileId)
             .then(profile => {
                 setProfile(profile);
@@ -18,12 +17,19 @@ export const ProfileDetail = () =>{
             setIsLoading(false);
     }, [profileId]);
     return (
-        <section className="profileDetail">
-                    <h1 className="profileUserName">{profile.name}</h1>
-                    <h2 className="profileBikes">{profile.userName}'s rides {profile.motorcycles}</h2>
+        <main>
+        <section className="profileDetailSurround">
+                                <h1 className="profileUserName">{profile.userName}</h1>
+                    <section className="profileDetail">
+                    <h2 className="profileBikes">{profile.userName} rides {profile.motorcycles}</h2>
                     <p className="profileDescription"> {profile.description}</p>
-                    <input className="profileSpotifyURI">{profile.userName}'s Spotify playlist: {profile.uri}</input>
+                    <aside className="profileSpotifyURI">{profile.userName}'s Spotify playlist: <p><iframe src={profile.uri} height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></aside>
                     <button className="profileButton" type="button" onClick={() => history.push(`profiles/${profile.id}/edit`)}>Edit</button>
         </section>
+        </section>
+        <section>
+
+        </section>
+        </main>
     )
 } 

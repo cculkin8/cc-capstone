@@ -5,7 +5,7 @@ import "./NavBar.css"
 
 export const NavBar = ({ clearUser, isAuthenticated }) => {
     const history = useHistory()
-
+    const currentUser = JSON.parse(sessionStorage.getItem("Bliss_User"))
     const handleLogout = () => {
         clearUser();
         history.push('/');
@@ -21,12 +21,10 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
                     <Link className="navbar__link" to="/posts"> Browse </Link>
                 </li>
                 : null}
-            {/* <li className="navbar__item">
-                <Link className="navbar__link" to="/posts"> Post </Link>
-            </li> */}
+
             {isAuthenticated
                 ? <li className="navbar__item">
-                    <Link className="navbar__link" to="/profiles"> Profile </Link>
+                    <Link className="navbar__link" to={`/profiles/${currentUser}`}> Profile </Link>
                 </li>
                 : null}
             {isAuthenticated

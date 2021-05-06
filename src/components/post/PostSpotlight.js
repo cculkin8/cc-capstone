@@ -14,9 +14,9 @@ export const PostSpotlight = ({postId}) => {
     <div className="post-spotlight">
       <div>
       <span className="postCardName">{post.name}</span>
-                    <p className="postDate">Date: {post.date} Zipcode: {post.zipcode}</p>
-                    <p className="postLink"><a href={post.mapurl}> Click me to find out where you're headed</a></p>
-                    <p className="postDescription"> Description: {post.description}</p>
+                    <p className="toppostDate">Date: {post.date} Zipcode: {post.zipcode}</p>
+                    <p className="toppostLink"><a href={post.mapurl}> Click me to find out where you're headed</a></p>
+                    <p className="toppostDescription"> Description: {post.description}</p>
       </div>
     </div>
   );
