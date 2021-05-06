@@ -5,7 +5,7 @@ import "./NavBar.css"
 
 export const NavBar = ({ clearUser, isAuthenticated }) => {
     const history = useHistory()
-    const currentUser = JSON.parse(sessionStorage.getItem("Bliss_User"))
+    const currentUser = (sessionStorage.getItem("Bliss_User"))
     const handleLogout = () => {
         clearUser();
         history.push('/');
