@@ -5,9 +5,9 @@ import React, {useState} from "react";
 
 export const Bliss = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("Bliss_User") !== null)
-
-    const setAuthUser = (user) => {
-        sessionStorage.setItem("Bliss_User", JSON.stringify(user))
+    
+    const setAuthUser = (userId) => {
+        sessionStorage.setItem("Bliss_User", (userId.id))
         setIsAuthenticated(sessionStorage.getItem("Bliss_User") !== null)
     }
 

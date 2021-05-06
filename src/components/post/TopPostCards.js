@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import {useHistory} from 'react-router-dom'
 import "./Post.css"
 import Microlink from '@microlink/react'
-export const PostCard = ({ post, deletePost }) => {
+
+export const TopPostCard = ({ post }) => {
 let [clickedLike, setNumberOfLikes] = useState(0)
 const history = useHistory();
 
 const handleLike = () => {
     const numberOfLikes = ++clickedLike
     setNumberOfLikes(numberOfLikes)
+    console.log(numberOfLikes)
   }
-
-
     return (
-        <div className="card">
-            <div className="card-content ">
+        <div className="topPostCard">
+            <div className="top-post-card-content">
                 <h3>
                     <span className="postCardName">{post.name}</span>
                     <p className="postDate">Date: {post.date} Zipcode: {post.zipcode}</p>
@@ -23,10 +23,8 @@ const handleLike = () => {
                         url={post.mapurl}>
                         </Microlink>: null}
                         </p>
-                    <p className="postDescription"> Description: {post.description}</p>
-                    <button className="postButton" type="button" onClick={() => history.push(`posts/${post.id}/edit`)}>Edit</button>
-                    <button className="postButton" type="button" onClick={() => deletePost(post.id)}>Delete</button>
-                    <button className="postButton" type="button" onClick={(handleLike)}>Like</button>
+                    <p className="toppostDescription"> Description: {post.description}</p>
+                    <button className="toppostButton" type="button" onClick={(handleLike)}>Like</button>
                 </h3>
             </div> 
         </div>

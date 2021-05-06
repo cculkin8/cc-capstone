@@ -1,8 +1,10 @@
-.profileCard{
+.profileDetail{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 40%;
+    margin-left: 2%;
+    width: 25%;
+    border: 1px solid white;
 }
 .profile-container-cards{
 width: 75%;
@@ -11,4 +13,7 @@ width: 75%;
     position: fixed;
     right: 0%;
     top: 4.8%;
+}
+.profileUserName{
+    font-size: xx-large;
 }
