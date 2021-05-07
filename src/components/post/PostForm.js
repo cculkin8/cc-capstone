@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { addPost } from "../../modules/PostManager";
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 export const PostForm = () => {
-    const currentUser = JSON.parse(sessionStorage.getItem("Bliss_User"))
-    const [post, setPost] = useState({name: "", zipcode: "",mapurl: "", description: "",  userId: (currentUser)});
-    const [isLoading, setIsLoading] = useState(false);
-    const history = useHistory();
+    const [post, setPost] = useState({name: "", zipcode: "",mapurl: "", description: "",  userId:parseInt(sessionStorage.getItem("Bliss_user"))});
+const [isLoading, setIsLoading] = useState(false);
+const history = useHistory();
 
 const handleControlledInputChange = (event) => {//this is making sure that input changes will actually have an effect instead of constantly clearing the input bar
     const newPost = { ...post }
@@ -27,6 +28,15 @@ const constructNewPost = evt => {
             .then(() => history.push("/posts"));
     }
 }
+const DropSkillOptions = [
+    'Beginner', 'Intermediate', 'Advanced'
+  ];
+  const DropTrafficOptions = [
+    'Low', 'Medium', 'High'
+  ];
+  const DropLengthOptions = [
+    'Short', 'Average', 'Long'
+  ];
 return (
     <>
         <form>
@@ -69,30 +79,9 @@ return (
                         value={post.description}
                     />
                 </div>
-                <div className="dropDown">
-                 <button>Skill Level</button>
-                <div className="skillDrop">
-                <button> Beginner </button>
-                <button> Intermediate </button>
-                <button> Advanced</button>
-                </div>
-                </div>
-                <div className="dropDown">
-                 <button>Skill Level</button>
-                <div className="skillDrop">
-                <button> Beginner </button>
-                <button> Intermediate </button>
-                <button> Advanced</button>
-                </div>
-                </div>
-                <div className="dropDown">
-                 <button>Skill Level</button>
-                <div className="skillDrop">
-                <button> Beginner </button>
-                <button> Intermediate </button>
-                <button> Advanced</button>
-                </div>
-                </div>
+                <Dropdown options={DropSkillOptions} placeholder="Skill Level"/>
+                <Dropdown options={DropTrafficOptions} placeholder="Traffic Level"/>
+                <Dropdown options={DropLengthOptions} placeholder="Length"/>
                 <div className="postPostBtn">
                     <button
                         type="button"

@@ -5,7 +5,7 @@ export const getPostById = (id) => {
 };
 
 export const getAllPosts = () => {
-return fetch(`${remoteURL}/posts`)
+return fetch(`${remoteURL}/posts?_expand=user`)
 .then(result => result.json())
   } 
 export const remove = (id) =>{
@@ -41,4 +41,8 @@ export const getRandomId= () =>{
     const randomPost = post[randomIndex];
     return randomPost.id;
   })
+}
+export const getPostByUser = (id) => {
+  return fetch(`${remoteURL}/post?usersId=${id}&_expand=user`)
+      .then(res => res.json())
 }

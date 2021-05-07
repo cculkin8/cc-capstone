@@ -1,0 +1,10 @@
+.aboutFooter{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    margin-top:2.5%;
+}
+.missionStatement{
+    margin-left: 5%;
+    margin-right: 5%;
+}

@@ -17,7 +17,7 @@ const handleLike = () => {
             <div className="top-post-card-content">
                 <h3>
                     <span className="postCardName">{post.name}</span>
-                    <p className="postDate">Date: {post.date} Zipcode: {post.zipcode}</p>
+                    <p className="postZipcode">Zipcode: {post.zipcode}</p>
                     <p className="linkPreview">
                         {post.mapurl ? <Microlink
                         url={post.mapurl}>
