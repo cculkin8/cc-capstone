@@ -40,7 +40,7 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
               <PostEditForm />
             </Route>
             <Route exact path="/profiles">
-	          {isAuthenticated ? <ProfileList /> : <Redirect to="/login" />}
+	          {isAuthenticated ? <ProfileList /> : <Redirect to="/profiles/:profileId(\d+)" />}
             </Route>
             <Route exact path="/profiles/:profileId(\d+)">
               <ProfileDetail/>

@@ -5,7 +5,7 @@ export const getProfileById = (id) => {
 };
 
 export const getAllProfiles = () => {
-return fetch(`${remoteURL}/profiles`)
+return fetch(`${remoteURL}/profiles?_expand=userId`)
 .then(result => result.json())
   } 
 export const remove = (id) =>{

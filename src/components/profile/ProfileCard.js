@@ -11,7 +11,7 @@ const history = useHistory();
                     <h2 className="profileBikes">{profile.userName} rides {profile.motorcycles}</h2>
                     <p className="profileDescription"> About me: {profile.description}</p>
                     <aside className="profileSpotifyURI">{profile.userName}'s Spotify playlist: <p><iframe src={profile.uri} height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></aside>
-                    <button className="profileButton" type="button" onClick={() => history.push(`profiles/${profile.id}/edit`)}>Edit</button>
+                    <button className="profileButton" type="button" onClick={() => history.push(`${profile.id}/edit`)}>Edit</button>
                 </h3>
             </div>
         </div>
