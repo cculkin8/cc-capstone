@@ -29,7 +29,7 @@ export const PostList = () => {
       onClick={() => {history.push("/posts/create")}}>
       Make a new post!
       </button></section>
-      <section>
+      <section> <h1 className="postH1">Browse all posts</h1>
       <div className="post-container-cards">
         {posts.map(post => 
           <PostCard

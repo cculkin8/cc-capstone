@@ -5,24 +5,24 @@
     position:relative;
     padding-top: 0%;
   }
-.post-spotlight{
-  margin-left: 5%;
-}
+
 h1{
   margin-left: 5%;
 }
-.refreshButton{
-  margin-left: 5%;
-}
 .toppostDescription{
-  width: 25%;
+  width: 50%;
 }
 .top3{
-  float: right;
   top: 0%;
-  display: flex;
-  margin-left: 40%;
 }
 .solid{
   margin-right: 15%;
+}
+.top-post-container-cards{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.microlink_card__media_image{
+  width: 1000%;
 }

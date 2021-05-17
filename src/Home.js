@@ -30,7 +30,7 @@ return(
     <header class="headerImage">
         <Header/>
         </header>
-        <h1 className ="solid">Welcome to Finding Bliss</h1>
+        <h1 className ="solid">Welcome to Finding Redline</h1>
         <aside className="top3">
             <div className="top-post-container-cards">
                 <h1 className="topCards">Our top posts!</h1>
@@ -40,7 +40,6 @@ return(
             </div>
             </aside>
             <h1>Feeling lucky?</h1>
-            <button className="refreshButton" onClick={refreshSpotlightPost}>Reload &#x27f3;</button>
       { spotlightId && <PostSpotlight postId={spotlightId} />}
     </>
 );

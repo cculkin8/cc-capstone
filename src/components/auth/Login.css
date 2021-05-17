@@ -24,9 +24,10 @@
     margin-top: 133%;
     min-width: 190%;
     margin-left: -75%;
-    border: ivory solid .1em;
+    border: #5D6163 solid .1em;
     border-radius: 3%;
-    background-color: ivory;
+    background-color: #5D6163;
+    color: ivory;
 }
 .submitButton{
     background-color: ivory;

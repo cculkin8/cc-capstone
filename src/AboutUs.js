@@ -14,8 +14,8 @@ return(
         <h1 className ="solid">Our Story</h1>
         <div className="missionStatement">
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc eget lorem dolor. Turpis tincidunt id aliquet risus. Ante in nibh mauris cursus. Mi bibendum neque egestas congue. Pretium quam vulputate dignissim suspendisse in est ante in nibh. Proin nibh nisl condimentum id venenatis a condimentum vitae. Nisl pretium fusce id velit. A lacus vestibulum sed arcu non odio. Donec enim diam vulputate ut pharetra sit.
-            </p>
+            When I first bought my motorcycle last year I found it incredibly hard to find good trips and roads to take that weren’t either heavily populated or roads I already knew about because every list had the same 10 roads to take. The goal of Finding Redline is to help people find and share routes others may not know about yet. I am building this application so that other riders like myself can enjoy a social aspect of riding, and have the ability to find new routes.
+           </p>
             <p>
             Non nisi est sit amet facilisis magna etiam tempor. Tincidunt vitae semper quis lectus nulla at. In iaculis nunc sed augue lacus. Et odio pellentesque diam volutpat commodo sed. Blandit volutpat maecenas volutpat blandit. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Cursus turpis massa tincidunt dui. Id semper risus in hendrerit gravida rutrum quisque non. Vitae aliquet nec ullamcorper sit. Consectetur libero id faucibus nisl tincidunt. Eleifend quam adipiscing vitae proin sagittis nisl. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Ut tellus elementum sagittis vitae et leo duis. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Posuere urna nec tincidunt praesent. Rhoncus aenean vel elit scelerisque mauris. Eu facilisis sed odio morbi.
             </p>
