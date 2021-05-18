@@ -2,18 +2,31 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 2%;
+    margin-left: 35%;
     width: 25%;
     border: 1px solid white;
+    margin-top: 5%;
+    background-color: #707e85;
+    color: #D9D8D8;
+    border-radius: 2%;
+    padding: 1%;
+}
+
+.profileDetailSurround{
+    display: flex;
+    justify-content: flex-start;
 }
 .profile-container-cards{
-width: 75%;
+    width: 75%;
+    
 }
 .profileSpotifyURI{
-    position: fixed;
-    right: 0%;
+    display: flex;
     top: 4.8%;
 }
 .profileUserName{
     font-size: xx-large;
+    left: 39.5%;
+    position: fixed;
+    color: #3A3230;
 }

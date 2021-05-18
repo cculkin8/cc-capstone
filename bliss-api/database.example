@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Example Name",
+      "email": "example@email.com"
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "userName": "example UserName",
+      "motorcycles": "Example motorcycle",
+      "description": "example Bio",
+      "uri": "https://open.spotify.com/embed/playlist/4Jv6sx7sPoPEYIvUhcVY9L",
+      "img": "testing.jpg",
+      "userId": 1
+    }
+  ],
+  "posts": [
+    {
+      "name": "Tail of the Dragon",
+      "zipcode": "28771",
+      "mapurl": "https://www.google.com/maps/d/u/0/viewer?ie=UTF8&oe=UTF8&msa=0&mid=1F6Ofp4Ojfw2ivia-1J3VHSAPxwk&ll=35.4997053195768%2C-83.95739099999999&z=14",
+      "description": "The most legendary road on the eastern half of the country. Get there early in the morning so you don't get caught up in traffic",
+      "userId": 1,
+      "id": 1
+    }
+  ],
+  "userLikes": [
+    {
+      "id": 1
+    }
+  ]
+}

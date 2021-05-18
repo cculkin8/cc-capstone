@@ -43,7 +43,7 @@ const HalfPageImg = () =>{
             </aside>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1 className="loginSolidWords">Finding Bliss</h1>
+                    <h1 className="loginSolidWords">Finding Redline</h1>
                     <h2 className="loginSolidWords">Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
