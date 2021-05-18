@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { updatePost,getPostById } from "../../modules/PostManager";
 import { useHistory, useParams } from "react-router-dom";
-
+import "./Post.css"
 export const PostEditForm = () => {
     const [post, setPost] = useState({name: "", zipcode: "", mapurl: "", description: ""});
    

@@ -30,6 +30,7 @@ const handleLike = () => {
                     <p className="posterProfile">Posted by:<Link  to={`/profiles/${post.userId}`}>{post.user.name}</Link></p>
                     <button className="postButton" type="button" onClick={() => history.push(`posts/${post.id}/edit`)}>Edit</button>
                     <button className="postButton" type="button" onClick={() => deletePost(post.id)}>Delete</button>
+                    <button className="toppostButton" type="button" onClick={(handleLike)}>Like</button>
                 </h3>
             </div> 
         </div>
@@ -49,6 +50,7 @@ const handleLike = () => {
                     <p className="posterProfile">Posted by:<Link  to={`/profiles/${post.userId}`}>{post.user.name}</Link></p>
                     <button className="postButton" type="button" onClick={() => history.push(`posts/${post.id}/edit`)}>Edit</button>
                     <button className="postButton" type="button" onClick={() => deletePost(post.id)}>Delete</button>
+                    <button className="toppostButton" type="button" onClick={(handleLike)}>Like</button>
                 </h3>
             </div> 
         </div>

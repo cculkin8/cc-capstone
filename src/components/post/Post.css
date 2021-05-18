@@ -33,3 +33,13 @@
     display: flex;
     justify-content: center;
 }
+.formgrid{
+    background-color: #707e85;
+    width: 33%;
+    margin-left: 33%;
+    height: 50%;
+    margin-top: 5%;
+}
+.form-control{
+    width: 99%;
+}
