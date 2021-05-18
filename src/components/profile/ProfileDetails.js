@@ -40,6 +40,7 @@ export const ProfileDetail = ({currentUser}) =>{
                     <h2 className="profileBikes">{profile.userName} rides {profile.motorcycles}</h2>
                     <p className="profileDescription"> {profile.description}</p>
                     <aside className="profileSpotifyURI">{profile.userName}'s Spotify playlist: <p><iframe src={profile.uri} height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></aside>
+                    <button className="profileButton" type="button" onClick={() => history.push(`/profiles/${profile.id}/edit`)}>Edit</button>
                     </section>
         </section>
         </main>

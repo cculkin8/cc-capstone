@@ -27,9 +27,9 @@ export const PostList = () => {
     <button type="button"
       className="btn"
       onClick={() => {history.push("/posts/create")}}>
-      Make a new post!
+      Submit a post!
       </button></section>
-      <section> <h1 className="postH1">Browse all posts</h1>
+      <section>
       <div className="post-container-cards">
         {posts.map(post => 
           <PostCard
